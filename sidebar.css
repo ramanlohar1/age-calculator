@@ -1,0 +1,63 @@
+.sidebar {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(205, 195, 195, 0.9); /* Background color for the sidebar */
+    color: #000000; /* Text color for the sidebar */
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+    text-align: center;
+    display: none;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+span {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="display.css">
+    <script src="https://kit.fontawesome.com/3df9dd8881.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="difference.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body id="body1">
+    <header>
+        <i class="fa-solid fa-angle-left"></i>
+        <p>Raman Kumar</p>
+        <div>
+            <button class="h-btn" onclick="reform();" id="Addbtn">+</button>
+        </div>
+    </header>
+    <div id="body2">
+
+        <div class="form__display">
+            <div id="form">
+                <div id="opd">
+                    <div>
+                        <label for="">Person 1</label>
+                        <select name="" id="person1">
+                            <option value="select">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Person 2</label>
+                        <select name="" id="person2">
+                            <option id="select2" value="select">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button id="calulate_btn" type="submit">Calulate</button>
+                </div>
+            </div>
+        </div>
+        <p id="o_d_p1"></p>
+
+        <div class="output_display">
+            <p id="o_d_p">Raman And Tarun Lohar</p>
+            <div id="odd">
+                <div>
+                    <label for="">Years</label>
+                    <input id="outy" type="text" readonly>
+                </div>
+                <div>
+                    <label for="">Months</label>
+                    <input id="outm" type="text" readonly>
+                </div>
+                <div>
+                    <label for="">Days</label>
+                    <input id="outd" type="text" readonly>
+                </div>
+            </div>
+            <p id="greate" ></p>
+        </div>
+        <footer>
+            <br>
+            <h6 id="h-btn">Age Calculator Created By Raman Kumar</h6>
+            <br>
+        </footer>
+    </div>
+</body>
+<script src="difference.js"></script>
+<script src="display.js"></script>
+<script src="color.js"></script>
+
+</html>

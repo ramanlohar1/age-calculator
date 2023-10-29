@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="display.css">
+    <script src="https://kit.fontawesome.com/3df9dd8881.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+    <header>
+        <i id="omenu" class="fa-solid fa-bars"></i>
+        <p>Raman Kumar</p>
+        <div>
+            <button class="h-btn" onclick="reform();" id="Addbtn">+</button>
+            <Button class="h-btn" onclick="toggleClass()"><i class="fa-solid fa-pen-to-square " id="h-btn"></i></Button>
+        </div>
+    </header>
+    <div class="sidebar">
+        <img id="logo" src="logo.jpg" alt="Logo">
+        <p>Raman Kumar</p>
+        <br><br><br>
+        <hr>
+        <br>
+        <span>background Color</span>
+        <br>
+        <input id="bci" type="color" value="#0000ff" class="background_color_inpur">
+        <hr>
+        <br>
+        <span>Header-Footer Color</span>
+        <br>
+        <input id="hfcolor" type="color" value="#0000ff" class="header-footer_color_inpur">
+        <hr>
+        <br>
+        <br>
+        <span>Difference Between Age</span>
+        <br>
+        <a href="difference.html"><button class="check_btn">Check</button></a>
+    </div>
+    <div id="body2">
+        <div class="form_display">
+        </div>
+        <footer>
+            <br>
+            <h6>Age Calculator Created By Raman Kumar</h6>
+            <br>
+        </footer>
+    </div>
+</body>
+<script src="display.js"></script>
+<script src="sidebar.js"></script>
+<script src="color.js"></script>
+
+</html>

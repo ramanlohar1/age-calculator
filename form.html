@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Apply styles to the form and make the inputs readonly */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f3f3f3; /* Set the background color */
+        }
+
+        #name{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        form input {
+            display: block;
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            background-color: white; /* Set the input background color */
+            color: #333; /* Set the input text color */
+        }
+
+        /* Style the labels */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555; /* Set the label text color */
+        }
+
+        /* Style the headers */
+        form h3 {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333; /* Set the header text color */
+        }
+
+        /* Make the form inputs readonly */
+        form input[readonly] {
+            background-color: #f0f0f0;
+            color: #555; /* Set the readonly input text color */
+            background: transparent;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        form {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f0f0f0;
+            border: 2px solid black;
+        }
+
+        #cdbd {
+            display: flex;
+        }
+
+        #ageymd {
+            display: flex;
+        }
+
+        #nbd {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #nbd #nbdd {
+            display: flex;
+        }
+
+        #extra {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #extra #extradiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #extra #extradiv div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        #extra #extradiv div input {
+            width: 100px;
+        }
+        #upcd div{
+            display: flex;
+        }
+        #upcd div input{
+            margin: 10px;
+        }
+        .left{
+            text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <input type="text" id="name" placeholder="Name" readonly>
+        </div>
+        <div id="cdbd">
+            <div>
+                <label for="cd">Current Date</label>
+                <input type="text" id="cd" readonly value="${}">
+            </div>
+            <div>
+                <label for="bd">Birth Date</label>
+                <input type="text" id="bd" readonly value="${}">
+            </div>
+        </div>
+
+        <div id="ageymd">
+            <div>
+                <label for="years">Years</label>
+                <input type="text" id="years" readonly value="${}">
+            </div>
+
+            <div>
+                <label for="months">Months</label>
+                <input type="text" id="months" readonly value="${}">
+            </div>
+
+            <div>
+                <label for="days">Days</label>
+                <input type="text" id="days" readonly value="${}">
+            </div>
+        </div>
+        <div id="nbd">
+            <h3>Next Birthday</h3>
+            <div id="nbdd">
+                <div>
+                    <label for="nbmonths">Months</label>
+                    <input type="text" id="nbmonths" readonly value="${}">
+                </div>
+                <div>
+                    <label for="nbdays">Days</label>
+                    <input type="text" id="nbdays" readonly value="${}">
+                </div>
+            </div>
+        </div>
+        <div id="extra">
+            <h3>Extra</h3>
+            <div id="extradiv">
+                <div>
+                    <label for="wholeyear">Years</label>
+                    <input type="text" id="wholeyear" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholemonth">Months</label>
+                    <input type="text" id="wholemonth" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholeweek">Weeks</label>
+                    <input type="text" id="wholeweek" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholeday">Days</label>
+                    <input type="text" id="wholeday" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholehour">Hours</label>
+                    <input type="text" id="wholehour" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholeminute">Minutes</label>
+                    <input type="text" id="wholeminute" readonly value="${}">
+                </div>
+                <div>
+
+                    <label for="wholesecond">Seconds</label>
+                    <input type="text" id="wholesecond" readonly value="${}">
+                </div>
+            </div>
+        </div>
+        <div id="upcd">
+            <h3>Upcoming Birthday</h3>
+            <div id="upcdd">
+                <input type="text" class="left" id="upfyd" readonly value="${}">
+                <input type="text" class="right" id="upfyvar" readonly value="${}">
+            </div>
+            <div>
+                <input type="text" class="left" id="upfyd2" readonly value="${}">
+                <input type="text" class="right" id="upfyvar2" readonly value="${}">
+            </div>
+            <div>
+                <input type="text" class="left" id="upfyd3" readonly value="${}">
+                <input type="text" class="right" id="upfyvar3" readonly value="${}">
+            </div>
+            <div>
+                <input type="text" class="left" id="upfyd4" readonly value="${}">
+                <input type="text" class="right" id="upfyvar4" readonly value="${}">
+            </div>
+            <div>
+                <input type="text" class="left" id="upfyd5" readonly value="${}">
+                <input type="text" class="right" id="upfyvar5" readonly value="${}">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
